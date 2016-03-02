@@ -5,7 +5,7 @@
 1. Clone the repository
 2. Update the inputData value in config.properties file to location of your data files.
 3. Build and deploy the application on tomcat.
-4. Service end point looks like http://<HOST>:<PORT>/wordplay/search_word/<SEARCH_TERM>
+4. Service end point looks like "http://<HOST>:<PORT>/wordplay/search_word/<SEARCH_TERM>"
 
 ### How it works
 
