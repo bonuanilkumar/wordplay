@@ -1,6 +1,7 @@
 package com.assignment.init;
 
-import java.util.TreeMap;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.assignment.controller.WordPlayResponse;
 import com.assignment.dataload.DataLoader;
@@ -8,7 +9,7 @@ import com.assignment.util.WordplayUtil;
 
 public class WordReader {
 
-	static TreeMap<String, Integer> frequencyMap = new TreeMap<String, Integer>();
+	static Map<String, Integer> frequencyMap = new HashMap<String, Integer>();
 	
 	public WordPlayResponse getWordPlayResponse(String key){
 		WordPlayResponse playResponse = new WordPlayResponse();

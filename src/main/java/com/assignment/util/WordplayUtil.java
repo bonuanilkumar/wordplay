@@ -2,12 +2,12 @@ package com.assignment.util;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 import java.util.Properties;
-import java.util.TreeMap;
 
 public class WordplayUtil {
 
-	public static int getCount(String word, TreeMap<String, Integer> data) {
+	public static int getCount(String word, Map<String, Integer> data) {
 		if (data.containsKey(word)) {
 			// Finds the word in the map, returns the total count
 			return data.get(word);

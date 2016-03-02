@@ -4,9 +4,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Scanner;
-import java.util.TreeMap;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -18,7 +19,7 @@ import com.assignment.util.WordplayUtil;
 @WebListener
 public class DataLoader implements ServletContextListener {
 
-	public static TreeMap<String, Integer> data = new TreeMap<String, Integer>();;
+	public static Map<String, Integer> data = new HashMap<String, Integer>();;
 
 	public void contextDestroyed(ServletContextEvent arg0) {
 		// TODO Auto-generated method stub

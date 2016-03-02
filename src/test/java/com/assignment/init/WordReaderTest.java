@@ -1,9 +1,8 @@
 package com.assignment.init;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.Reader;
-import java.util.TreeMap;
+import java.util.HashMap;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,7 +16,7 @@ public class WordReaderTest {
 	@BeforeClass
 	public static void setUpBeforeClass() {
 		DataLoader dataLoader = new DataLoader();
-		dataLoader.data = new TreeMap<String, Integer>();
+		dataLoader.data = new HashMap<String, Integer>();
 		dataLoader.readDataFromFiles("./src/test/resources/large_chunks");
 		reader = new WordReader();
 
